@@ -5,4 +5,6 @@
     <string name="enter_username">Enter Username</string>
     <string name="pass">Password</string>
     <string name="user">Username</string>
+    <string name="logout_name">Logout</string>
+    <string name="welcome_name">Welcome</string>
 </resources>

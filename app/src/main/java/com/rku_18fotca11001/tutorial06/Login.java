@@ -64,15 +64,14 @@ public class Login extends AppCompatActivity {
                     return;
                 }
 
-                if(valusername.equals("admin@gmail.com")&& valpassword.equals("admin"))
+                if(valusername.equals("a@gmail.com")&& valpassword.equals("admin"))
                 {
                     SharedPreferences preferences = getSharedPreferences("university",MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putString("username",valusername);
                     editor.commit();
-
-
                     Intent intent = new Intent(Login.this, Welcome.class);
+                    intent.putExtra("wel",valusername);
                     startActivity(intent);
                     finish();
                     Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
